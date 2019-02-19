@@ -1,4 +1,4 @@
-FROM nginx:1.10
-
-ADD ./lab.conf /etc/nginx/conf.d/default.conf
-WORKDIR /var/www
+FROM ubuntu:16.04
+LABEL maintainer="xhunter@sibunglon.com"
+RUN apt-get update
+RUN apt-get install python python-pip ansible
