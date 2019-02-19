@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: lab.dockerfile
+    volumes:
+      - ./:/var/www
+    ports:
+      - "32765:80"
+
